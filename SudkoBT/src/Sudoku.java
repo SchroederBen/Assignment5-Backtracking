@@ -13,7 +13,7 @@ public class Sudoku {
     public void loadboard() {
 
         try {
-            Scanner scanner = new Scanner(new File("sudoku.txt"));
+            Scanner scanner = new Scanner(new File("SudkoBT/sudoku.txt"));
             for(int i = 0; i < SIZE; i++)
             {
                 for(int j=0; j < SIZE; j++)
@@ -28,6 +28,7 @@ public class Sudoku {
         } catch (FileNotFoundException e)
             {
                 System.out.println("File not found");
+                e.printStackTrace();
             }
 
     }
